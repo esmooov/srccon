@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script type="text/javascript" src="http://elm-lang.org/elm-runtime.js"></script>
+    <script src="build/demo.js"></script>
+  </head>
+  <body>
+    <div id="demo" style="width:100%;height:400px;"></div>
+  </body>
+    <script>
+        var div = document.getElementById('demo')
+        Elm.embed(Elm.Stamper, div)
+    </script>
+</html>
