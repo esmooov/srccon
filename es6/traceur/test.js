@@ -27,7 +27,7 @@ function customIterator() {
     }
 
     var doubler = myiterator(2);
-
+    debugger;
     for (var element of doubler){
         console.log("My doubler gave me",element);
     }

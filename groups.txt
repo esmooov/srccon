@@ -1,0 +1,25 @@
+- Concurrency Models
+    - CSP (generators and clojurescript)
+    - Promises
+
+- ES6 Features
+    - Generator functions
+    - Iterators
+    - Destructuring assignment
+    - Scoping changes
+    - Template literals
+
+- Reactivity
+    - Elm 
+    - FRP
+    - RxJS
+
+- Compiled to JS
+    - Idris, Fay, Clojurescript, Elm, etc
+    - Sweet.js
+    - Typescript
+
+- Rendering
+    - React.js
+    - Om
+

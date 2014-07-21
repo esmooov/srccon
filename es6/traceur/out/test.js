@@ -47,6 +47,7 @@ function customIterator() {
     }, $__3, this);
   });
   var doubler = myiterator(2);
+  debugger;
   for (var $__0 = doubler[$traceurRuntime.toProperty(Symbol.iterator)](),
       $__1; !($__1 = $__0.next()).done; ) {
     var element = $__1.value;

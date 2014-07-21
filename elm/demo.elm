@@ -14,3 +14,4 @@ renderStamps (w,h) locs =
                     |> rotate (toFloat x)
   in  layers [ collage w h (map pentagon locs)
              , plainText "Click to stamp a pentagon." ]
+             
