@@ -18,3 +18,4 @@ scene (w,h) locs =
                     |> rotate (toFloat x)
   in  layers [ collage w h (map drawPentagon locs)
              , plainText "Click to stamp a pentagon." ]
+             
