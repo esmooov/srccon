@@ -1,16 +1,20 @@
-module Stamper where
- 
 import Mouse
 import Window
- 
-main = lift2 renderStamps Window.dimensions clickLocations
- 
+
+main : Signal Element
+main = lift2 scene Window.dimensions (merge posis clickLocations)
+
+-- for a good time, remove "sampleOn Mouse.clicks" ;)
+clickLocations : Signal [(Int,Int)]
 clickLocations = foldp (::) [] (sampleOn Mouse.clicks Mouse.position)
- 
-renderStamps (w,h) locs =
-  let pentagon (x,y) =
-          ngon 5 20 |> filled (hsl 0.3 0.7 0.5)
+
+posis = lift (\p -> [p]) Mouse.position  
+
+scene : (Int,Int) -> [(Int,Int)] -> Element
+scene (w,h) locs =
+  let drawPentagon (x,y) =
+          ngon 5 20 |> filled (hsla (toFloat x) 0.9 0.6 0.7)
                     |> move (toFloat x - toFloat w / 2, toFloat h / 2 - toFloat y)
                     |> rotate (toFloat x)
-  in  layers [ collage w h (map pentagon locs)
+  in  layers [ collage w h (map drawPentagon locs)
              , plainText "Click to stamp a pentagon." ]
