@@ -1,5 +1,3 @@
-
-
 - Concurrency Models
     - Events
     - CSP (generators and clojurescript)
