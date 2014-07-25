@@ -1,3 +1,5 @@
+
+
 - Concurrency Models
     - Events
     - CSP (generators and clojurescript)
@@ -7,11 +9,14 @@
 
 - ES6 Features
     - Generator functions
+      - http://jlongster.com/2012/10/05/javascript-yield.html
     - Iterators
     - Destructuring assignment
         - Multivalue returns
     - Scoping changes
+        - http://globaldev.co.uk/2013/09/es6-part-2/
     - Template literals
+        - http://www.nczonline.net/blog/2012/08/01/a-critical-review-of-ecmascript-6-quasi-literals/
 
 - Reactivity
     - Elm 
